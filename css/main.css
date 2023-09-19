@@ -25,7 +25,7 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 5;
   background-color: #6e0000e5;
 }
 
@@ -130,17 +130,50 @@ header > .inner .main-menu .item .item__contents .inner > li > a:hover {
 }
 
 .visual {
+  width: 100%;
   margin-top: 96px;
-  height: 530px;
+  height: 730px;
   display: flex;
   justify-content: center;
   position: relative;
   transition: 0.5;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
+/* .visual.hide {
+  height: 0;
+} */
+
+.visual .swiper {
+
+}
+.visual .swiper-slide .btn {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  /* padding: 20px; */
+  background-color: #000;
+}
+.visual .swiper-pagination {
+  position: absolute;
+  bottom: 0px;
+}
+.visual .swiper-slide img {
+  /* height: 750px; */
+}
+
 
 .order {
   width: 100%;
+  position: relative;
+}
+.order .btn-group {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+  /* top: -20px; */
 }
 .order .btn-group > ul {
   display: flex;

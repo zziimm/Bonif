@@ -7,7 +7,7 @@ new Swiper('.visual .swiper', {
   slidesPerView: 1,
   spaceBetween: 0,
   pagination: {
-    el: '.visual . swiper-pagintion',
+    el: '.visual .swiper-pagination',
     clickable: true
   },
   navigation: {
