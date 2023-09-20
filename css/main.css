@@ -21,6 +21,34 @@ img {
   text-align: center;
 }
 
+/* 스크롤 시 애니메이션을 공통 스타일로 추가 */
+/* BACK TO POSITION */
+.back-to-position {
+  opacity: 0;
+  transition: 1s;
+}
+.back-to-position.to-left {
+  /* 오른쪽에서 왼쪽으로 나타나는 */
+  transform: translateX(150px);
+}
+.back-to-position.to-right {
+  /* 왼쪽에서 오른쪽으로 나타나는 */
+  transform: translateX(-150px);
+}
+.show .back-to-position {
+  opacity: 1;
+  transform: translateX(0);
+}
+.show .back-to-position.delay-1 {
+  transition-delay: 0.3s;
+}
+.show .back-to-position.delay-2 {
+  transition-delay: 0.6s;
+}
+.show .back-to-position.delay-3 {
+  transition-delay: 0.9s;
+}
+
 header {
   width: 100%;
   position: fixed;
@@ -30,7 +58,7 @@ header {
 }
 
 header > .inner {
-  height: 96px;
+  height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,7 +159,7 @@ header > .inner .main-menu .item .item__contents .inner > li > a:hover {
 
 .visual {
   width: 100%;
-  margin-top: 96px;
+  margin-top: 90px;
   height: 730px;
   display: flex;
   justify-content: center;
@@ -147,21 +175,69 @@ header > .inner .main-menu .item .item__contents .inner > li > a:hover {
 
 }
 .visual .swiper-slide .btn {
+  width: 200px;
   position: absolute;
-  bottom: 50px;
-  left: 0;
-  right: 0;
+  bottom: 60px;
+  left: 700px;
+  /* right: 0; */
   margin: 0 auto;
-  /* padding: 20px; */
-  background-color: #000;
+  padding: 20px 30px;
+  background-color: #6e0000;
+  border-radius: 15px;
+  /* border: 2px solid #; */
+  color: #fff;
+  font-weight: 700;
+  transition: 0.4s;
+}
+.visual .swiper-slide .btn:hover {
+  background-color: #570101;
 }
 .visual .swiper-pagination {
   position: absolute;
-  bottom: 0px;
+  bottom: 20px;
 }
-.visual .swiper-slide img {
-  /* height: 750px; */
+.visual .swiper-pagination .swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+  background-color: #6e0000;
 }
+.visual .swiper-pagination .swiper-pagination-bullet-active {
+  width: 20px;
+  height: 20px;
+}
+.visual .swiper-button-prev,
+.visual .swiper-button-next {
+  width: 42px;
+  height: 42px;
+  /* border: 2px solid #000; */
+  position: absolute;
+  top: 350px;
+  transition: 0.4s;
+  color: #0000007c;
+  padding: 30px 0;
+}
+.visual .swiper-button-prev span,
+.visual .swiper-button-next span {
+  font-size: 50px;
+}
+.visual .swiper-button-prev {
+  left: 50%;
+  margin-left: -600px;
+}
+.visual .swiper-button-next {
+  right: 50%;
+  margin-right: -600px;
+}
+.visual .swiper-button-prev:hover,
+.visual .swiper-button-next:hover {
+  color: #000;
+}
+.visual .swiper-button-prev::after,
+.visual .swiper-button-next::after {
+  display: none;
+}
+
+
 
 
 .order {
@@ -250,4 +326,57 @@ header > .inner .main-menu .item .item__contents .inner > li > a:hover {
   background-image: url('../images/main/img_21.jpg');
   height: 630px;
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
+.toriPaitan .inner .text-group .bon-name{
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.toriPaitan .inner .text-group .bon-name .detail {
+  margin-top: 22px;
+  border-bottom: 2px solid #6e0000;
+  padding-bottom: 5px;
+  padding-right: 15px;
+  color: #fff;
+}
+.toriPaitan .inner .text-group .bon-name .detail span:first-child {
+  font-size: 38px;
+  font-weight: 700;
+}
+.toriPaitan .inner .text-group .bon-name .detail span:last-child {
+  font-size: 18px;
+  margin-left: 20px;
+}
+.toriPaitan .inner .text-group .bon-name a {
+  background-color: #6e0000;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-top: 22px;
+}
+.toriPaitan .inner .text-group img {
+  position: absolute;
+  left: 50px;
+  top: 150px;
+  height: 450px;
+}
+.toriPaitan .inner .text-group .text-area {
+  position: absolute;
+  right: 0;
+  top: 240px;
+  color: #fff;
+  font-size: 17px;
+  line-height: 30px;
+}
+.toriPaitan .inner .text-group .text-area p:first-child {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.toriPaitan .inner .text-group .text-area p:first-child span {
+  color: #6e0000;
+}
+
+
