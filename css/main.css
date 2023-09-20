@@ -165,26 +165,17 @@ header > .inner .main-menu .item .item__contents .inner > li > a:hover {
   justify-content: center;
   position: relative;
   transition: 0.5;
-  /* overflow: hidden; */
 }
-/* .visual.hide {
-  height: 0;
-} */
 
-.visual .swiper {
-
-}
 .visual .swiper-slide .btn {
   width: 200px;
   position: absolute;
   bottom: 60px;
-  left: 700px;
-  /* right: 0; */
+  left: 460px;
   margin: 0 auto;
   padding: 20px 30px;
   background-color: #6e0000;
   border-radius: 15px;
-  /* border: 2px solid #; */
   color: #fff;
   font-weight: 700;
   transition: 0.4s;
@@ -209,7 +200,6 @@ header > .inner .main-menu .item .item__contents .inner > li > a:hover {
 .visual .swiper-button-next {
   width: 42px;
   height: 42px;
-  /* border: 2px solid #000; */
   position: absolute;
   top: 350px;
   transition: 0.4s;
@@ -249,7 +239,6 @@ header > .inner .main-menu .item .item__contents .inner > li > a:hover {
   right: 0;
   left: 0;
   margin: auto;
-  /* top: -20px; */
 }
 .order .btn-group > ul {
   display: flex;
@@ -301,7 +290,7 @@ header > .inner .main-menu .item .item__contents .inner > li > a:hover {
 }
 .main-contents .inner .bon-name a {
   background-color: #6e0000;
-  padding: 5px 10px;
+  padding: 10px 15px;
   border-radius: 20px;
   margin-top: 22px;
 }
@@ -352,7 +341,7 @@ header > .inner .main-menu .item .item__contents .inner > li > a:hover {
 }
 .toriPaitan .inner .text-group .bon-name a {
   background-color: #6e0000;
-  padding: 5px 10px;
+  padding: 10px 15px;
   border-radius: 20px;
   margin-top: 22px;
 }
@@ -379,4 +368,22 @@ header > .inner .main-menu .item .item__contents .inner > li > a:hover {
   color: #6e0000;
 }
 
+.youtube {
+  margin-top: 100px;
+  position: relative;
+  height: 840px;
+  background-image: url('../images/main/img_23.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
+.youtube .youtube__area {
+  width: 1920px;
+  height: 1080px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

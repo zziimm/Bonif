@@ -25,3 +25,12 @@ spyEls.forEach(function (spyEl) {
   .setClassToggle(spyEl, 'show') // 요소가 화면에 보이면 show 클래스 추가
   .addTo(new ScrollMagic.Controller()); // 컨트롤러에 장면을 할당(필수!)
 });
+
+// const name1 = document.querySelector('.main-contents .bon-name')
+// window.addEventListener('scroll', function () {
+//   if (window.scrollY > 300) {
+//     name1.style.opacity = 1;
+//   } else {
+//     name1.style.opacity = 0;
+//   }
+// })
