@@ -1,3 +1,7 @@
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
 a {
   text-decoration: none;
   color: #fff;
@@ -76,7 +80,7 @@ header > .inner .main-menu li + li {
   margin-left: 30px;
 }
 header > .inner .main-menu li > .item__name {
-  padding: 20px 10px 38px;
+  padding: 20px 10px 26px;
   margin: -10px;
   font-weight: 700;
 }
@@ -92,7 +96,7 @@ header > .inner .main-menu .item {
 
 header > .inner .main-menu .item:hover .item__contents {
   display: block;
-  margin-top: 40px;
+  margin-top: 29px;
 }
 
 header > .inner .main-menu .item .item__contents {
@@ -270,7 +274,6 @@ header > .inner .main-menu .item .item__contents .inner > li > a:hover {
   border-top: 1px solid #d9d9d9;
 }
 
-
 .main-contents .inner .main-box .bon-name {
   display: flex;
   justify-content: space-between;
@@ -307,8 +310,6 @@ header > .inner .main-menu .item .item__contents .inner > li > a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* padding-bottom: 120px; */
-  /* border-bottom: 1px solid #d9d9d9; */
 }
 
 .main-contents .inner .main-box .img > a > span {
@@ -378,9 +379,9 @@ header > .inner .main-menu .item .item__contents .inner > li > a:hover {
 }
 
 .youtube {
-  margin-top: 100px;
+  /* padding-top: 100px; */
   position: relative;
-  height: 840px;
+  height: 900px;
   background-image: url('../images/main/img_23.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -398,19 +399,133 @@ header > .inner .main-menu .item .item__contents .inner > li > a:hover {
   top: 50px;
 }
 .youtube .text-area h4 {
-  color: #87af0f;
-}
-.youtube .text-area p {
   margin-top: 10px;
   font-size: 34px;
   font-weight: 700;
 }
+.youtube .text-area p {
+  color: #87af0f;
+  font-style: italic;
+  font-family: 'Noto Serif Display', serif;
+}
 
 .youtube .youtube__area {
-  width: 1920px;
-  height: 1080px;
+  width: 960px;
+  height: 540px;
   position: absolute;
   right: 0;
   left: 0;
   margin: 0 auto;
+  top: 150px;
+}
+#player {
+  width: 100%;
+  height: 100%;
+}
+.youtube .text-area-2 {
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  bottom: 70px;
+  font-weight: 600;
+}
+.youtube .text-area-2 h4 {
+  font-size: 28px;
+  padding-bottom: 20px;
+}
+.youtube .text-area-2 p {
+  line-height: 25px;
+}
+
+.youtube .text-area-2 a {
+  padding: 15px 20px;
+  background-color: #87af0f;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 130px;
+  bottom: -57px;
+  font-weight: 700;
+  transition: 0.4s;
+}
+.youtube .text-area-2 a:hover {
+  background-color: #58720b;
+}
+
+.youtube .youtube__cover {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 150px;
+  width: 960px;
+  height: 540px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.vision {
+  height: 280px;
+  background-image: url('../images/main/img_27.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.vision .inner .vision-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+
+.vision .inner .vision-text > p {
+  padding-top: 100px;
+  font-style: italic;
+  font-family: 'Noto Serif Display', serif;
+}
+.vision .inner .vision-text > h4 {
+  font-size: 34px;
+  font-weight: 700;
+}
+.vision .inner .vision-text .vision-textbox {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: #87af0f;
+  width: 330px;
+  padding: 15px;
+  bottom: -170px;
+  line-height: 20px;
+}
+.vision .inner .vision-text .vision-textbox span {
+  font-weight: 700;
+}
+
+.news {
+  background-color: #f4f4f4;
+}
+.news .inner {
+  padding: 150px;
+}
+.news .inner .news-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.news .inner .news-text > p {
+  font-style: italic;
+  font-family: 'Noto Serif Display', serif;
+  color: #6e0000;
+}
+.news .inner .news-text > h4 {
+  font-size: 34px;
+  font-weight: 700;
 }
