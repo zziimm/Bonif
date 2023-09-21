@@ -35,11 +35,16 @@ spyEls.forEach(function (spyEl) {
   .addTo(new ScrollMagic.Controller()); // 컨트롤러에 장면을 할당(필수!)
 });
 
-// const name1 = document.querySelector('.main-contents .bon-name')
-// window.addEventListener('scroll', function () {
-//   if (window.scrollY > 300) {
-//     name1.style.opacity = 1;
-//   } else {
-//     name1.style.opacity = 0;
-//   }
-// })
+
+const searchDetail = document.querySelector('section.search-detail');
+const searchToggleBtn = document.querySelector('.sub-menu .searchBtn');
+
+searchToggleBtn.addEventListener('click', function () {
+  if (searchDetail.classList.contains('hide')) {
+    searchDetail.classList.remove('hide');
+    searchToggleBtn.textContent = 'close';
+  } else {
+    searchDetail.classList.add('hide');
+    searchToggleBtn.textContent = 'search';
+  }
+});
