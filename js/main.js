@@ -25,15 +25,15 @@ spyEls.forEach(function (spyEl) {
   .setClassToggle(spyEl, 'show') // 요소가 화면에 보이면 show 클래스 추가
   .addTo(new ScrollMagic.Controller()); // 컨트롤러에 장면을 할당(필수!)
 });
-const spyElse = document.querySelectorAll('section .inner.scroll-spy');
-spyEls.forEach(function (spyEl) {
-  new ScrollMagic.Scene({ // 감시할 장면(Scene) 추가 및 옵션 지정
-    triggerElement: spyEl, // 보여짐 여부를 감시할 요소를 지정
-    triggerHook: 0.7 // 화면의 80% 지점에서 보여짐 여부 감시(0~1사이 지정)
-  })
-  .setClassToggle(spyEl, 'show') // 요소가 화면에 보이면 show 클래스 추가
-  .addTo(new ScrollMagic.Controller()); // 컨트롤러에 장면을 할당(필수!)
-});
+// const spyElse = document.querySelectorAll('section .inner.scroll-spy');
+// spyEls.forEach(function (spyEl) {
+//   new ScrollMagic.Scene({ // 감시할 장면(Scene) 추가 및 옵션 지정
+//     triggerElement: spyEl, // 보여짐 여부를 감시할 요소를 지정
+//     triggerHook: 0.7 // 화면의 80% 지점에서 보여짐 여부 감시(0~1사이 지정)
+//   })
+//   .setClassToggle(spyEl, 'show') // 요소가 화면에 보이면 show 클래스 추가
+//   .addTo(new ScrollMagic.Controller()); // 컨트롤러에 장면을 할당(필수!)
+// });
 
 const searchDetail = document.querySelector('section.search-detail');
 const searchToggleBtn = document.querySelector('.sub-menu .searchBtn');
@@ -54,11 +54,11 @@ const totalGnbBtn = document.querySelector('.sub-menu .totalGnbBtn')
 const totalGnbBtnClose = document.querySelector('.totalGnbBtn-close')
 
 totalGnbBtn.addEventListener('click', function () {
-  totalGnbBg.classList.add('active');
+  totalGnbBg.classList.add('activeBtn');
   totalGnbinner.classList.add('activeInner');
 });
 totalGnbBtnClose.addEventListener('click', function () {
-  totalGnbBg.classList.remove('active');
+  totalGnbBg.classList.remove('activeBtn');
   totalGnbinner.classList.remove('activeInner');
 });
 

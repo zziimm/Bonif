@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="shortcut icon" href="./images/main/foot_logo_01.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/login.css">
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js" integrity="sha512-v/m68W+vaGN/6igoyFpd4GlQzu0jx9/n5gr2PKq5vif+RObyGKHse384YHrOULaxZ810XhlHUrmB3U8UnPB19Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <script defer src="../js/main.js"></script>
+
+</head>
+<body>
+  <header>
+    <div class="inner">
+      <a href="#" class="logo">
+        <img src="../images/common/logo.png" alt="bon">
+      </a>
+      <nav>
+        <ul class="main-menu">
+          <li class="item">
+            <a href="#" class="item__name">본죽</a>
+            <div class="item__contents">
+              <ul class="inner">
+                <li>
+                  <a href="#">브랜드 소개</a>
+                </li>
+                <li>
+                  <a href="#">메뉴 소개</a>
+                </li>
+                <li>
+                  <a href="#">매장 찾기</a>
+                </li>
+                <li>
+                  <a href="#">이벤트</a>
+                </li>
+                <li>
+                  <a href="#">주문하기</a>
+                </li>
+                <li>
+                  <a href="#">창업</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="item">
+            <a href="#" class="item__name">본죽&비빔밥</a>
+            <div class="item__contents">
+              <ul class="inner">
+                <li>
+                  <a href="#">브랜드 소개</a>
+                </li>
+                <li>
+                  <a href="#">메뉴 소개</a>
+                </li>
+                <li>
+                  <a href="#">매장 찾기</a>
+                </li>
+                <li>
+                  <a href="#">이벤트</a>
+                </li>
+                <li>
+                  <a href="#">주문하기</a>
+                </li>
+                <li>
+                  <a href="#">창업</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="item">
+            <a href="#" class="item__name">본도시락</a>
+            <div class="item__contents">
+              <ul class="inner">
+                <li>
+                  <a href="#">브랜드 소개</a>
+                </li>
+                <li>
+                  <a href="#">메뉴 소개</a>
+                </li>
+                <li>
+                  <a href="#">매장 찾기</a>
+                </li>
+                <li>
+                  <a href="#">이벤트</a>
+                </li>
+                <li>
+                  <a href="#">주문하기</a>
+                </li>
+                <li>
+                  <a href="#">창업</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="item">
+            <a href="#" class="item__name">본설렁탕</a>
+            <div class="item__contents">
+              <ul class="inner">
+                <li>
+                  <a href="#">브랜드 소개</a>
+                </li>
+                <li>
+                  <a href="#">메뉴 소개</a>
+                </li>
+                <li>
+                  <a href="#">매장 찾기</a>
+                </li>
+                <li>
+                  <a href="#">이벤트</a>
+                </li>
+                <li>
+                  <a href="#">주문하기</a>
+                </li>
+                <li>
+                  <a href="#">창업</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="item">
+            <a href="#" class="item__name">본우리반상</a>
+            <div class="item__contents">
+              <ul class="inner">
+                <li>
+                  <a href="#">브랜드 소개</a>
+                </li>
+                <li>
+                  <a href="#">메뉴 소개</a>
+                </li>
+                <li>
+                  <a href="#">매장 찾기</a>
+                </li>
+                <li>
+                  <a href="#">이벤트</a>
+                </li>
+                <li>
+                  <a href="#">창업</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="item">
+            <a href="#" class="item__name">멘지</a>
+            <div class="item__contents">
+              <ul class="inner">
+                <li>
+                  <a href="#">브랜드 소개</a>
+                </li>
+                <li>
+                  <a href="#">창업</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="item">
+            <a href="#" class="item__name">창업안내</a>
+            <div class="item__contents">
+              <ul class="inner">
+                <li>
+                  <a href="#">창업안내</a>
+                </li>
+                <li>
+                  <a href="#">창업상담</a>
+                </li>
+                <li>
+                  <a href="#">창업 설명회</a>
+                </li>
+                <li>
+                  <a href="#">추천상권</a>
+                </li>
+                <li>
+                  <a href="#">입점제안</a>
+                </li>
+                <li>
+                  <a href="#">성공스토리</a>
+                </li>
+                <li>
+                  <a href="#">창업소식</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="sub-menu">
+        <ul>
+          <li><a href="#">주문</a></li>
+          <li><a href="#">로그인</a></li>
+        </ul>
+        <button type="button" class="material-icons btn searchBtn">search</button>
+        <button type="button" class="material-icons btn totalGnbBtn">menu</button>
+      </div>
+    </div>
+  </header>
+  <section class="search-detail hide">
+    <div class="search-box">
+      <!-- <label for="brand"></label> -->
+      <select id="brand">
+        <option value="">브랜드 전체</option>
+        <option value="본죽">본죽</option>
+        <option value="본죽&비빔밥">본죽&비빔밥</option>
+        <option value="본도시락">본도시락</option>
+        <option value="본설렁탕">본설렁탕</option>
+      </select>
+      <input type="text">
+      <a href="#"><span class="material-icons">search</span></a>
+    </div>
+    <div class="menu-bad">
+      <h4>메뉴 배지</h4>
+      <ul>
+        <li>
+          <a href="">전통</a>
+        </li>
+        <li>
+          <a href="">해장</a>
+        </li>
+        <li>
+          <a href="">신메뉴</a>
+        </li>
+        <li>
+          <a href="">매운맛</a>
+        </li>
+        <li>
+          <a href="">샐러드</a>
+        </li>
+        <li>
+          <a href="">프리미엄</a>
+        </li>
+      </ul>
+    </div>
+    <div class="menu-bon">
+      <h4>본 인기메뉴</h4>
+      <ul>
+        <li>
+          <a href="">전복죽</a>
+        </li>
+        <li>
+          <a href="">쇠고기야채죽</a>
+        </li>
+        <li>
+          <a href="">바싹불고기오징어 한상</a>
+        </li>
+        <li>
+          <a href="">소불고기비빔밥</a>
+        </li>
+        <li>
+          <a href="">백설렁탕</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="totalGnb">
+    <div class="totalGnb-group">
+      <div class="inner">
+        <div class="a-box">
+          <h4><a href="#">본아이에프</a></h4>
+          <ul>
+            <li><a href="#">회사소개</a></li>
+          </ul>
+        </div>
+        <div class="a-box">
+          <h4><a href="#">본죽</a></h4>
+          <ul>
+            <li><a href="#">브랜드 소개</a></li>
+            <li><a href="#">메뉴 소개</a></li>
+            <li><a href="#">메뉴 찾기</a></li>
+            <li><a href="#">이벤트</a></li>
+            <li><a href="#">주문하기</a></li>
+            <li><a href="#">창업</a></li>
+          </ul>
+        </div>
+        <div class="a-box">
+          <h4><a href="#">본죽&비빔밥</a></h4>
+          <ul>
+            <li><a href="#">브랜드 소개</a></li>
+            <li><a href="#">메뉴 소개</a></li>
+            <li><a href="#">메뉴 찾기</a></li>
+            <li><a href="#">이벤트</a></li>
+            <li><a href="#">주문하기</a></li>
+            <li><a href="#">창업</a></li>
+          </ul>
+        </div>
+        <div class="a-box">
+          <h4><a href="#">본도시락</a></h4>
+          <ul>
+            <li><a href="#">브랜드 소개</a></li>
+            <li><a href="#">메뉴 소개</a></li>
+            <li><a href="#">메뉴 찾기</a></li>
+            <li><a href="#">이벤트</a></li>
+            <li><a href="#">주문하기</a></li>
+            <li><a href="#">창업</a></li>
+          </ul>
+        </div>
+        <div class="a-box">
+          <h4><a href="#">본설렁탕</a></h4>
+          <ul>
+            <li><a href="#">브랜드 소개</a></li>
+            <li><a href="#">메뉴 소개</a></li>
+            <li><a href="#">메뉴 찾기</a></li>
+            <li><a href="#">이벤트</a></li>
+            <li><a href="#">주문하기</a></li>
+            <li><a href="#">창업</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="inner">
+        <div class="a-box">
+          <h4><a href="#">본우리반상</a></h4>
+          <ul>
+            <li><a href="#">브랜드 소개</a></li>
+            <li><a href="#">메뉴 소개</a></li>
+            <li><a href="#">메뉴 찾기</a></li>
+            <li><a href="#">이벤트</a></li>
+            <li><a href="#">창업</a></li>
+          </ul>
+        </div>
+        <div class="a-box">
+          <h4><a href="#">멘지</a></h4>
+          <ul>
+            <li><a href="#">브랜드 소개</a></li>
+            <li><a href="#">창업</a></li>
+          </ul>
+        </div>
+        <div class="a-box">
+          <h4><a href="#">창업안내</a></h4>
+          <ul>
+            <li><a href="#">창업안내</a></li>
+            <li><a href="#">창업상담</a></li>
+            <li><a href="#">창업 설명회</a></li>
+            <li><a href="#">추천상권</a></li>
+            <li><a href="#">입점제안</a></li>
+            <li><a href="#">성공 스토리</a></li>
+            <li><a href="#">창업소식</a></li>
+          </ul>
+        </div>
+        <div class="a-box">
+          <h4><a href="#">고객센터</a></h4>
+          <ul>
+            <li><a href="#">1:1 문의</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">설문조사</a></li>
+            <li><a href="#">소비자중심경영</a></li>
+            <li><a href="#">제안해주세요</a></li>
+            <li><a href="#">협력사를 모십니다</a></li>
+          </ul>
+        </div>
+        <div class="a-box">
+          <h4><a href="#">주문</a></h4>
+          <ul>
+            <li><a href="#">간편 재주문</a></li>
+            <li><a href="#">일반 주문</a></li>
+            <li><a href="#">단체 주문</a></li>
+            <li><a href="#">선물하기</a></li>
+            <li><a href="#">기프트카드</a></li>
+            <li><a href="#">지류상품권</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="totalGnbBtn-close btn"><span class="material-icons">close</span></button>
+  </section>
+
+  <section class="login">
+    <div class="inner">
+      <div class="loginDetail">
+        <h1>로그인</h1>
+        
+        <div class="loginSelect">
+          <a href="">회원 로그인</a>
+          <a href="">비회원 로그인</a>
+        </div>
+        <input type="text">
+        <input type="password">
+        <label for="saveId">
+          <input type="checkbox" id="saveId">아이디 저장
+        </label>
+        <a href="#">로그인</a>
+
+        <a href="#"><span class="material-icons">chat_bubble</span>카카오톡 로그인</a>
+        <a href="#"><span class="material-icons">account_circle</span>네이버 로그인</a>
+
+        <a href="">아이디/비밀번호 찾기 <span class="material-icons">chevron_right</span></a>
+        <a href="">회원가입 <span class="material-icons">chevron_right</span></a>
+      </div>
+      
+    </div>
+  </section>
+
+  <footer>
+    <div class="inner">
+      <div class="f-top">
+        <div>
+          <span class="material-icons">call</span>
+          <span>대표번호</span>
+          <span>1644-6288</span>
+        </div>
+        <div>
+          <span class="material-icons">help_outline</span>
+          <span>창업문의</span>
+          <span>1668-3007</span>
+        </div>
+        <div class="family">
+          <a href="#">
+            <span>FAMLIY SITE</span>
+            <span>+</span>
+          </a>
+        </div>
+      </div>
+      <div class="f-btm">
+        <div class="f-btm-a">
+          <a href="#"><img src="../images/main/ico_insta.svg" alt=""></a>
+          <a href="#"><img src="../images/main/ico_youtube.svg" alt=""></a>
+          <a href="#"><img src="../images/main/ico_facebook.svg" alt=""></a>
+          <a href="#"><img src="../images/main/ico_blog.svg" alt=""></a>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">이메일 무단수집거부</a></li>
+            <li><a href="#">법적고지</a></li>
+            <li><a href="#">협력업체 모집</a></li>
+            <li><a href="#">고객센터</a></li>
+          </ul>
+        </div>
+        <div class="info">
+          <span>본아이에프(주)</span>
+          <span>서울특별시 영등포구 선유로 165 (양평동3가, 와이피센터) 6층</span>
+          <span>대표자명: 이진희</span>
+          <span>사업자등록번호 101-86-07256</span>
+          <span>통신판매신고번호:2019-서울영등포-1230호</span>
+        </div>
+        <p class="copyright">
+          COPYRIGHT 2018 BONIF CO. LTD. ALL RIGHTS RESERVED.
+        </p>
+      </div>
+    </div>
+  </footer>
+  <div id="to-top">
+    <span class="material-icons">expand_less</span>
+  </div>
+  <div id="quick">
+    <nav>
+      <ul>
+        <li><a href=""><span class="material-icons">shopping_cart</span>주문</a></li>
+        <li><a href=""><span class="material-icons">card_giftcard</span>선물</a></li>
+        <li><a href=""><span class="material-icons">assignment_turned_in</span>주문조회</a></li>
+        <li><a href=""><span class="material-icons">groups</span>단체</a></li>
+        <li><a href=""><span class="material-icons">place</span>매장</a></li>
+        <li><a href=""><span class="material-icons">help_outline</span>창업</a></li>
+        <li><a href=""><span class="material-icons">celebration</span>이벤트</a></li>
+      </ul>
+    </nav>
+  </div>
+</body>
+</html>

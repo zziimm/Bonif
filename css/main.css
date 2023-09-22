@@ -252,6 +252,7 @@ section.totalGnb {
   opacity: 0;
   transition: opacity 0.3s;
 }
+
 .totalGnb .totalGnb-group {
   position: absolute;
   left: 0;
@@ -259,9 +260,8 @@ section.totalGnb {
   margin: 0 auto;
   top: -1000px;
   opacity: 0;
-
 }
-.totalGnb.active {
+.totalGnb.activeBtn {
   opacity: 1;
   top: 0;
 }
@@ -272,9 +272,6 @@ section.totalGnb {
   opacity cubic-bezier(1,-0.08,.23,1.07) 1.3s,
   top cubic-bezier(.05,1.1,.3,1) 1s;
 }
-
-
-
 .totalGnb .inner {
   display: flex;
   justify-content: space-between;
@@ -325,7 +322,6 @@ section.totalGnb {
   display: flex;
   justify-content: center;
   position: relative;
-  transition: 0.5;
 }
 
 .visual .swiper-slide .btn {
