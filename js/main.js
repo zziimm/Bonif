@@ -48,3 +48,38 @@ searchToggleBtn.addEventListener('click', function () {
     searchToggleBtn.textContent = 'search';
   }
 });
+
+const totalGnbBg = document.querySelector('section.totalGnb')
+const totalGnbinner = document.querySelector('.totalGnb .totalGnb-group')
+const totalGnbBtn = document.querySelector('.sub-menu .totalGnbBtn')
+const totalGnbBtnClose = document.querySelector('.totalGnbBtn-close')
+
+totalGnbBtn.addEventListener('click', function () {
+  totalGnbBg.classList.add('active');
+  totalGnbinner.classList.add('activeInner');
+});
+totalGnbBtnClose.addEventListener('click', function () {
+  totalGnbBg.classList.remove('active');
+  totalGnbinner.classList.remove('activeInner');
+});
+
+const toTop = document.querySelector('#to-top')
+toTop.addEventListener('click', function () {
+  gsap.to(window, 0.6, {
+    scrollTo: 0
+  });
+});
+
+window.addEventListener('scroll', function () {
+  if (window.scrollY > 500) {
+    gsap.to(toTop, 0.6, {
+      opacity: 1,
+      x: 0
+    });
+  } else {
+    gsap.to(toTop, 0.6, {
+      opacity: 1,
+      x: 100
+    })
+  }
+});
