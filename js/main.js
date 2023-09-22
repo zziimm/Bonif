@@ -35,7 +35,6 @@ spyEls.forEach(function (spyEl) {
   .addTo(new ScrollMagic.Controller()); // 컨트롤러에 장면을 할당(필수!)
 });
 
-
 const searchDetail = document.querySelector('section.search-detail');
 const searchToggleBtn = document.querySelector('.sub-menu .searchBtn');
 
