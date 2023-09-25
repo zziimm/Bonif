@@ -26,12 +26,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   
   <script defer src="../js/main.js"></script>
-
+  <script defer src="../js/login.js"></script>
 </head>
 <body>
   <header>
     <div class="inner">
-      <a href="#" class="logo">
+      <a href="../index.html" class="logo">
         <img src="../images/common/logo.png" alt="bon">
       </a>
       <nav>
@@ -381,31 +381,39 @@
     <button type="button" class="totalGnbBtn-close btn"><span class="material-icons">close</span></button>
   </section>
 
-  <section class="login">
-    <div class="inner">
-      <div class="loginDetail">
+  <main class="login">
+    <div class="main">
+
         <h1>로그인</h1>
         
         <div class="loginSelect">
           <a href="">회원 로그인</a>
           <a href="">비회원 로그인</a>
         </div>
-        <input type="text">
-        <input type="password">
-        <label for="saveId">
-          <input type="checkbox" id="saveId">아이디 저장
-        </label>
-        <a href="#">로그인</a>
+
+        <div class="loginDetail">
+          <div class="loginId">
+            <input type="text" placeholder="아이디를 입력해주세요.">
+          </div>
+          <div class="loginPass">
+            <input type="password" placeholder="비밀번호를 입력해주세요.">
+          </div>
+          <div class="check">
+            <input type="checkbox" id="saveId">
+            <label for="saveId">아이디 저장</label>
+          </div>
+          <a href="#">로그인</a>
+        </div>
 
         <a href="#"><span class="material-icons">chat_bubble</span>카카오톡 로그인</a>
         <a href="#"><span class="material-icons">account_circle</span>네이버 로그인</a>
 
         <a href="">아이디/비밀번호 찾기 <span class="material-icons">chevron_right</span></a>
         <a href="">회원가입 <span class="material-icons">chevron_right</span></a>
-      </div>
+
       
     </div>
-  </section>
+  </main>
 
   <footer>
     <div class="inner">
@@ -458,9 +466,6 @@
       </div>
     </div>
   </footer>
-  <div id="to-top">
-    <span class="material-icons">expand_less</span>
-  </div>
   <div id="quick">
     <nav>
       <ul>

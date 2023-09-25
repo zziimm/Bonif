@@ -7,6 +7,10 @@ a {
   color: #fff;
 }
 
+input {
+  outline: none;
+}
+
 .inner {
   max-width: 1200px;
   margin: 0 auto;
@@ -287,28 +291,72 @@ section.totalGnb {
 }
 
 .login {
-  height: 756px;
-  padding: 97px 0 0 120px;
+  padding: 0px 0 120px 0;
 }
 .login a {
   color: #000;
 }
-.login .inner .loginDetail {
+.login .main {
+  width: 560px;
+  height: 756px;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 42px;
+  flex-direction: column;
 }
-.login .inner .loginDetail h1 {
-  margin-bottom: 30px;
+.login .main h1 {
   font-size: 42px;
+  padding-top: 42px;
+  margin-bottom: 30px;
 }
-.login .inner .loginDetail .loginSelect a {
-  width: 280px;
-  height: 50px;
-  background-color: #000;
+
+.login .main .loginSelect {
+  width: 100%;
+  display: flex;
 }
+.login .main .loginSelect a {
+  width: 50%;
+  text-align: center;
+  border-bottom: 2px solid #6e0000;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.login .main .loginSelect a:last-child {
+  border-bottom: 1px solid #666;
+}
+.login .main .loginDetail {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login .main .loginDetail input[type="text"],
+.login .main .loginDetail input[type="password"] {
+  height: 45px;
+  width: 400px;
+  font-size: 18px;
+  padding: 0 10px;
+}
+.login .main .loginDetail input[type="text"]:focus,
+.login .main .loginDetail input[type="password"]:focus {
+  border: 1px solid #6e0000;
+}
+.login .main .loginDetail .check {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.login .main .loginDetail .check input {
+  width: 20px;
+  height: 20px;
+}
+.login .main .loginDetail .check label {
+  font-size: 16px;
+}
+
 
 
 
@@ -471,3 +519,4 @@ footer .info {
 #quick nav li a span {
   margin: 10px 0;
 }
+
