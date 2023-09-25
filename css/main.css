@@ -461,6 +461,9 @@ section.totalGnb {
   margin-top: 22px;
   margin-bottom: 5px;
 }
+.main-contents .inner .main-box .img img {
+  margin-bottom: 15px;
+}
 .main-contents .inner .main-box .img {
   display: flex;
   align-items: center;
@@ -534,7 +537,6 @@ section.totalGnb {
 }
 
 .youtube {
-  /* padding-top: 100px; */
   position: relative;
   height: 900px;
   background-image: url('../images/main/img_23.jpg');
@@ -561,6 +563,7 @@ section.totalGnb {
   font-style: italic;
   font-family: 'Noto Serif Display', serif;
   font-size: 20px;
+  margin-bottom: 15px;
 }
 
 .youtube .youtube__area {
@@ -644,6 +647,7 @@ section.totalGnb {
   font-style: italic;
   font-family: 'Noto Serif Display', serif;
   font-size: 20px;
+  margin-bottom: 15px;
 }
 .vision .inner .vision-text > h4 {
   font-size: 48px;
@@ -680,6 +684,7 @@ section.totalGnb {
   font-family: 'Noto Serif Display', serif;
   color: #6e0000;
   font-size: 20px;
+  margin-bottom: 15px;
 }
 .news .inner .news-text > h4 {
   font-size: 48px;
