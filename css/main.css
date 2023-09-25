@@ -314,15 +314,16 @@ section.totalGnb {
   font-size: 36px;
 }
 
-
 .visual {
-  width: 100%;
+  /* width: 100%; */
   margin-top: 90px;
   height: 730px;
   display: flex;
   justify-content: center;
   position: relative;
+  overflow: hidden;
 }
+
 
 .visual .swiper-slide .btn {
   width: 200px;
@@ -461,13 +462,13 @@ section.totalGnb {
   margin-top: 22px;
   margin-bottom: 5px;
 }
-.main-contents .inner .main-box .img img {
-  margin-bottom: 15px;
-}
 .main-contents .inner .main-box .img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.main-contents .inner .main-box .img img {
+  margin-bottom: 15px;
 }
 
 .main-contents .inner .main-box .img > a > span {
@@ -478,6 +479,35 @@ section.totalGnb {
   color: #6e0000;
   font-weight: 700;
 }
+.main-contents .inner .main-box .img > a {
+  position: relative;
+}
+.main-contents .inner .main-box .img > a > .textInfo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+
+.main-contents .inner .main-box .img a:hover > img {
+  opacity: 0.3;
+}
+.main-contents .inner .main-box .img a:hover > .textInfo {
+  opacity: 1;
+}
+.main-contents .inner .main-box .img > a > .textInfo {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 500;
+  opacity: 0;
+}
+
+
+
 
 .toriPaitan {
   background-image: url('../images/main/img_21.jpg');
@@ -965,4 +995,61 @@ footer .info {
 }
 #quick nav li a span {
   margin: 10px 0;
+}
+
+/* 반응형 */
+
+header .res-menu .material-icons {
+  font-size: 35px;
+}
+header .res-menu {
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  color: #fff;
+}
+header .res-detail {
+  background-color: #a3a3a3;
+  width: 40%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+}
+
+
+
+@media screen and (max-width: 1340px){
+  #quick {
+    display: none;
+  }
+  .visual {
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .main-contents .main-box .img a:last-child {
+    display: none;
+  }
+  .news .news-box .box:last-child {
+    display: none;
+  }
+  .toriPaitan .text-group img {
+    opacity: 0.5;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  header .inner nav,
+  header .inner .sub-menu {
+    display: none;
+  }
+  header .inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .res-menu {
+    display: block;
+  }
 }
