@@ -6,6 +6,7 @@ new Swiper('.visual .swiper', {
   },
   slidesPerView: 1,
   spaceBetween: 0,
+
   pagination: {
     el: '.visual .swiper-pagination',
     clickable: true
@@ -82,3 +83,35 @@ window.addEventListener('scroll', function () {
     })
   }
 });
+
+const mToggleBtn = document.querySelector('header .res-menu .material-icons')
+const mToggleBg = document.querySelector('header .res-detail')
+const mToggleBox = document.querySelector('header .innerBox')
+
+mToggleBtn.addEventListener('click', function () {
+  let hasActive = mToggleBg.classList.contains('mobileMenu');
+  if (hasActive) {
+    mToggleBg.classList.remove('mobileMenu');
+    mToggleBox.classList.remove('mobileMenu');
+    mToggleBtn.textContent = 'reorder'
+  } else {
+    mToggleBg.classList.add('mobileMenu');
+    mToggleBox.classList.add('mobileMenu');
+    mToggleBtn.textContent = 'close'
+  }
+})
+
+const mDetailMenu = document.querySelector('header .res-detail .innerBox .mBonName ul')
+const mDetailBtn = document.querySelector('header .res-detail .innerBox .mBonName button')
+const mDetailBtnIcon = document.querySelector('header .res-detail .innerBox .mBonName button span')
+
+mDetailBtn = addEventListener('click', function () {
+  let hasActive2 = mDetailMenu.classList.contains('showDetail');
+  if (hasActive2) {
+    mDetailMenu.classList.remove('showDetail');
+    mDetailBtnIcon.textContent = 'expand_more'
+  } else {
+    mDetailMenu.classList.add('showDetail');
+    mDetailBtnIcon.textContent = 'expand_less'
+  }
+})
