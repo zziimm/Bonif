@@ -324,11 +324,7 @@ section.totalGnb {
   overflow: hidden;
   box-sizing: border-box;
 }
-.visual .swiper-wrapper {
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-}
+
 .visual .swiper-wrapper .swiper-slide {
   display: flex;
   align-items: center;
@@ -408,6 +404,7 @@ section.totalGnb {
 }
 .order .btn-group > ul {
   display: flex;
+  justify-content: center;
 }
 .order .btn-group > ul > li > a {
   display: flex;
@@ -1195,6 +1192,28 @@ header .res-detail .innerBox .mBonName ul li a {
   .toriPaitan .text-group img {
     opacity: 0.5;
   }
+  .f-top {
+    position: absolute;
+    left: 10%;
+  }
+  .f-top .family {
+    display: none;
+  }
+  .f-btm .f-btm-a {
+    margin-top: 50px;
+  }
+  .f-btm .menu ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .f-btm .info {
+    text-align: center;
+  }
+  .f-btm .info span:first-child {
+    display: inline-block;
+    width: 100%;
+  }
+  
 }
 
 @media screen and (max-width: 830px) {
@@ -1219,4 +1238,45 @@ header .res-detail .innerBox .mBonName ul li a {
   .main-contents .main-box .img a:nth-child(3) {
     display: none;
   }
+  .main-contents .inner .main-box .bon-name {
+    justify-content: space-around;
+    gap: 130px;
+  }
+  .main-contents .inner .main-box .img {
+    display: flex;
+    justify-content: space-around;
+  }
+  .toriPaitan .inner .text-group .bon-name {
+    justify-content: space-around;
+  }
+  .youtube {
+    display: none;
+  }
+  .news .inner .news-box {
+    justify-content: space-around;
+  }
 }
+
+/* .mToriPaitan img {
+  width: 400px;
+  margin-left: 60px;
+}
+.mToriPaitan div p:first-child span {
+  color: #6e0000;
+}
+.mToriPaitan div p:last-child {
+  text-align: center;
+  line-height: 24px;
+}
+.mToriPaitan div p:first-child {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.mToriPaitan div {
+  color: #fff;
+}
+.mToriPaitan {
+  position: absolute;
+  /* top: 3550px; */
