@@ -1,5 +1,6 @@
 body {
   font-family: 'Noto Sans KR', sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -321,15 +322,27 @@ section.totalGnb {
   justify-content: center;
   position: relative;
   overflow: hidden;
+  box-sizing: border-box;
 }
-
+.visual .swiper-wrapper {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+.visual .swiper-wrapper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+}
+.visual .swiper-wrapper .swiper-slide img {
+  width: 100vw;
+}
 
 .visual .swiper-slide .btn {
   width: 200px;
   position: absolute;
   bottom: 60px;
-  left: 460px;
-  margin: 0 auto;
   padding: 20px 30px;
   background-color: #6e0000;
   border-radius: 15px;

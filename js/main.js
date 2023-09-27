@@ -5,7 +5,8 @@ new Swiper('.visual .swiper', {
     delay: 5000
   },
   slidesPerView: 1,
-  spaceBetween: 0,
+  // spaceBetween: 10,
+  centersdSlides: true,
 
   pagination: {
     el: '.visual .swiper-pagination',
